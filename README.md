@@ -13,6 +13,7 @@ provider "aws" {
 }
 
 module "docker_instance" {
-    source = "sakiphan/docker-instance/aws"
-    key_name = "terraform-key" #enter your own key.
+    source = "<github-username>/docker-instance/aws"
+    key_name = "clarusway"
 }
+```
