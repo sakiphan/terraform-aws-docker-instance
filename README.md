@@ -14,5 +14,5 @@ provider "aws" {
 
 module "docker_instance" {
     source = "sakiphan/docker-instance/aws"
-    key_name = "terraform-key"
+    key_name = "terraform-key" #enter your own key.
 }
