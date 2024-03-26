@@ -1,19 +1,15 @@
-Terraform Module to provision an AWS EC2 instance with the latest amazon linux 2023 ami and installed docker in it.
+# Terraform Module: AWS EC2 Instance with Docker
 
-Not intended for production use. It is an example module.
+This Terraform module provisions an AWS EC2 instance with the latest Amazon Linux 2023 AMI and installs Docker on it.
 
-It is just for showing how to create a publish module in Terraform Registry.
-
-Usage:
+## Usage
 
 ```hcl
-
 provider "aws" {
   region = "us-east-1"
 }
 
 module "docker_instance" {
-    source = "<github-username>/docker-instance/aws"
-    key_name = "clarusway"
+    source   = "<github-username>/docker-instance/aws"
+    key_name = "example"
 }
-```
